@@ -1,0 +1,113 @@
+body{
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center; /* توسيط أفقي */
+    align-items: center;     /* توسيط عمودي */
+    height: 100vh;           /* ارتفاع كامل الشاشة */
+    margin: 0;
+}
+section{
+    background-color: #14213d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* توسيط أفقي */
+    justify-content: flex-start; /* فوق */
+    gap: 20px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 15px 15px 35px rgba(0,0,0,0.25);
+    font-family: 'Roboto', sans-serif;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;       /* عرض ثابت وجميل */
+    gap: 15px;          /* مسافة بين الحقول */
+}
+h2{
+    color: #ffffff;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    font-family: "Playwrite IE", cursive;
+    font-style: normal;
+    
+}
+input {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+    background-color: #fff; /* أبيض */
+    color: #333;             /* نص أسود */
+}
+
+/* تأثير التركيز على الحقول */
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* زر الدخول */
+button {
+    padding: 12px 15px;
+    background-color: #fca311;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* تأثير المرور على الزر */
+button:hover {
+    background-color: #ad700d;
+}
+
+/* رابط إنشاء حساب */
+a {
+    margin-top: 10px;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Label */
+label {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+/* Select */
+select {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background-color: #fff; /* أبيض */
+    color: #333;
+    transition: 0.3s;
+}
+
+/* عند التركيز على Select */
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* إزالة autofill أو لون الخلفية الغريب */
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: #333 !important;
+}
