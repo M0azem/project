@@ -44,4 +44,9 @@ class Company extends Model {
         $stmt = $this->db->prepare("UPDATE company SET is_approved = 1 WHERE id = ?");
         return $stmt->execute([$id]);
     }
+    public function findById($id) {
+    $stmt = $this->db->prepare("SELECT * FROM company WHERE company_id = ?");
+    $stmt->execute([$id]);
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+}
 }

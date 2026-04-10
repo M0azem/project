@@ -1,0 +1,95 @@
+.about-page {
+    padding: 60px 20px;
+}
+
+.about-page-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.about-page-text {
+    flex: 1;
+    min-width: 300px;
+}
+.about-page-title-h1{
+    color: #14213D;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.about-page-title {
+    color: #14213D;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.about-page-paragraph {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.about-page-image-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-page-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* ===== Team Section ===== */
+
+.about-team {
+    background: #e5e5e5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-team-heading {
+    font-size: 26px;
+    margin-bottom: 40px;
+    color: #14213D;
+}
+
+.about-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.about-team-card {
+    background: #fca311;
+    padding: 20px;
+    width: 220px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.about-team-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-team-img {
+    width: 250px;      /* حجم الصورة */
+    height: auto;      /* يحافظ على التناسب */
+    border-radius: 10px;
+}
+
+.about-team-name {
+    margin-bottom: 5px;
+}
+
+.about-team-role {
+    color: gray;
+    font-size: 14px;
+}
+
+.my-img {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover;
+}
